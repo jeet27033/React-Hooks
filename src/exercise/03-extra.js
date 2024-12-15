@@ -1,5 +1,4 @@
 import React from 'react';
-import Appp from './03-extra';
 
 function Name({ name, onNameChange }) {
   return (
@@ -24,7 +23,7 @@ function FavoriteAnimal({ animal, onAnimalChange }) {
 }
 
 function Display({ name, animal }) {
-  return <div>{`Hey ${name}, your favorite animal is: ${animal}!`}</div>;
+  return <div>{`your favorite animal is: ${animal}!`}</div>;
 }
 
 function App() {
@@ -38,7 +37,6 @@ function App() {
       <FavoriteAnimal animal={animal} onAnimalChange={event => setAnimal(event.target.value)} />
 
       <Display name={name} animal={animal} />
-      <Appp/>
     </form>
   );
 }
